@@ -10,7 +10,7 @@ const productSchema = new Schema({
   },
   email: {
     type: String,
-    default: new Date().getSeconds(),
+    default: new Date().getMilliseconds(),
   },
   phone: {
     type: String,
