@@ -7,9 +7,9 @@ router.get("/", getProduct);
 // get single data 
 router.get("/:_id", singleApi)
 // add data 
-router.post("/add", addProduct);
+router.post("/", addProduct);
 // add update 
-router.patch("/:_id", updateProduct);
+router.patch("/:_id", updateProduct)
 // add delete 
 router.delete("/:_id", deleteProduct);
 

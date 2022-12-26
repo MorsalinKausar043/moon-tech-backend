@@ -38,7 +38,7 @@ const addProduct = async (req, res) => {
 
 const updateProduct = async (req, res) => {
   try {
-    const _id = rea.params._id;
+    const _id = req.params._id;
     const query = {_id: mongoose.Types.ObjectId(_id)};
     const updateDoc = {$set:req.body};
     const option = {upsert:true};
